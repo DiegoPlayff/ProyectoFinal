@@ -1,0 +1,39 @@
+#hero {
+  width: 100%;
+  height: calc(100vh - 80px - 80px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  // agregar un fondo transparente
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+.hero-text {
+  text-align: center;
+  color: #faf3e7;
+  h1 {
+    font-size: 50px;
+  }
+  p {
+    font-size: 30px;
+  }
+}
+// Cuando el viewport es menor a 1200px
+@media screen and (max-width: 1500px) {
+  #hero{
+    margin-top: 70px;
+  }
+}
+
+// Cuando el viewport es menor a 992px
+@media screen and (max-width: 992px) {
+
+}
+
+// Cuando el viewport es menor a 768px
+@media screen and (max-width: 768px) {
+}

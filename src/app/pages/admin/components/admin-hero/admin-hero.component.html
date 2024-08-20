@@ -1,0 +1,22 @@
+<!-- imagen,nombre,descripcion -->
+<div class="admin-hero-container">
+    <h2>Editar Hero</h2>
+    <div class="admin-hero-line"></div>
+    <form [formGroup]="editForm" (ngSubmit)="editHero()">
+        <div class="form-group">
+            <label for="imagen">Imagen</label>
+            <input type="text" id="imagen" name="imagen" formControlName="imagen">
+        </div>
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" formControlName="nombre">
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion" formControlName="descripcion"></textarea>
+        </div>
+        <div class="form-group" id="buttons">
+            <button type="submit">Editar</button>
+        </div>
+    </form>
+</div>

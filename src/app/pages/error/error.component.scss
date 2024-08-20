@@ -1,0 +1,37 @@
+.error-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .error-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 400px;
+    padding: 40px 20px;
+    min-height: 350px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .error-card h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .error-card p {
+    text-align: center;
+    font-size: 20px;
+  } 
+  .error-card button {
+    margin-top: 20px;
+  }
+  .error-btn {
+    background-color: #cc8c18;
+    color: #faf3e7;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

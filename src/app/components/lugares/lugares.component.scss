@@ -1,0 +1,78 @@
+.lugares {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  margin: 0 50px;
+}
+.lugares h2 {
+  font-size: 14px;
+  color: #cc8c18;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.lugares span {
+  color: #24416b;
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  font-size: 40px;
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.lugares-line {
+  width: 400px;
+  height: 1px;
+  background-color: #cc8c18;
+  margin-bottom: 1rem;
+}
+.lugares-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1rem;
+}
+.lugares-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #faf3e7;
+  border-radius: 10px;
+}
+.lugares-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.lugares-card h3 {
+  color: #cc8c18;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.lugares-card p {
+  color: #24416b;
+  font-size: 14px;
+  text-align: center;
+}
+
+// Cuando el viewport es menor a 768px
+@media screen and (max-width: 768px) {
+  .lugares {
+    margin: 0;
+  }
+  .lugares h2 {
+    font-size: 12px;
+  }
+  .lugares span {
+    font-size: 30px;
+  }
+  .lugares-line {
+    width: 200px;
+  }
+}

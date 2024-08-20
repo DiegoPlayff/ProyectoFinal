@@ -1,0 +1,26 @@
+<!-- nombre, direccion, telefono, mapa -->
+<div class="admin-empresa-container">
+    <h2>Editar Empresa</h2>
+    <div class="admin-empresa-line"></div>
+    <form [formGroup]="editForm" (ngSubmit)="editEmpresa()">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" formControlName="nombre">
+        </div>
+        <div class="form-group">
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" name="direccion" formControlName="direccion">
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" name="telefono" formControlName="telefono">
+        </div>
+        <div class="form-group">
+            <label for="mapa">Mapa</label>
+            <textarea name="mapa" id="mapa" formControlName="mapa"></textarea>
+        </div>
+        <div class="form-group" id="buttons">
+            <button type="submit">Editar</button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="https://placehold.co/600x200/000000/FFFFFF/png" alt="footer-logo">
+        </div>
+        <div class="footer-info">
+            <p>© 2024 Todos los derechos reservados | Agencia</p>
+        </div>
+        <div class="footer-social">
+            <a *ngFor="let red of redes" href="{{red.link}}" target="_blank"><i class="{{red.icono}}"></i></a>
+        </div>
+    </div>
+</footer>

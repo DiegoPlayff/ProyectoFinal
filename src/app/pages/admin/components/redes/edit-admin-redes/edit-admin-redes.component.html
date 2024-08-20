@@ -1,0 +1,22 @@
+<div class="admin-redes-container">
+    <h2>Editar Red</h2>
+    <div class="admin-redes-line"></div>
+    <form [formGroup]="redForm" (ngSubmit)="editRed()">
+        <div class="form-group">
+            <label for="nombre">nombre</label>
+            <input type="text" id="nombre" name="nombre" formControlName="nombre">
+        </div>
+        <div class="form-group">
+            <label for="link">link</label>
+            <input type="text" id="link" name="link" formControlName="link">
+        </div>
+        <div class="form-group">
+            <label for="icono">icono</label>
+            <input type="text" id="icono" name="icono" formControlName="icono">
+        </div>
+        <div class="form-group" id="buttons">
+            <button type="button" class="cancel" [routerLink]="['/admin/redes']">Volver</button>
+            <button type="submit">Editar</button>
+        </div>
+    </form>
+</div>

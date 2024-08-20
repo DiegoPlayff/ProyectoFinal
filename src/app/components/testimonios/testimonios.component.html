@@ -1,0 +1,23 @@
+<section class="testimonios" id="testimonios">
+    <h2>Testimonios</h2>
+    <div class="testimonios-line"></div>
+    <span>¿Qué dicen nuestros clientes?</span>
+    <div class="testimonios-wrapper">
+      <div class="testimonios-container">
+        <div class="testimonios-card" *ngFor="let testimonio of testimonios">
+          <div class="testimonios-image">
+            <img src="{{testimonio.imagen}}" alt="testimonio">
+          </div>
+          <div class="testimonios-text">
+            <h3>{{testimonio.nombre}}</h3>
+            <p>{{testimonio.descripcion}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="prev" class="control">&lt;</button>
+      <button id="next" class="control">&gt;</button>
+    </div>
+  </section>
+  

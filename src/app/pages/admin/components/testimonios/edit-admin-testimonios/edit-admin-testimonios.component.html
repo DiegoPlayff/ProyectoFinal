@@ -1,0 +1,22 @@
+<div class="admin-testimonios-container">
+    <h2>Editar testimonio</h2>
+    <div class="admin-testimonios-line"></div>
+    <form [formGroup]="editForm" (ngSubmit)="edittestimonio()">
+        <div class="form-group">
+            <label for="nombre">Título</label>
+            <input type="text" id="nombre" formControlName="nombre">
+        </div>
+        <div class="form-group">
+            <label for="imagen">Imagen</label>
+            <input type="text" id="imagen" formControlName="imagen">
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" formControlName="descripcion"></textarea>
+        </div>
+        <div class="form-group" id="buttons">
+            <button type="button" class="cancel" [routerLink]="['/admin/testimonios']">Volver</button>
+            <button type="submit">Editar</button>
+        </div>
+    </form>
+</div>

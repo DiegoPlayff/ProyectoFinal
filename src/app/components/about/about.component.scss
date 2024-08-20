@@ -1,0 +1,112 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  margin: 50px 0;
+}
+.about h2 {
+  text-transform: uppercase;
+  color: #cc8c18;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+.about span {
+  color: #24416b;
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  font-size: 40px;
+  display: block;
+  text-align: center;
+}
+button {
+  background-color: #cc8c18;
+  color: #faf3e7;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  margin-top: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #24416b;
+  color: #cc8c18;
+}
+.about-line {
+  width: 400px;
+  height: 1px;
+  background-color: #24416b;
+  margin: 20px auto;
+}
+.about-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin: 50px auto;
+}
+
+.about-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+  text-align: justify;
+}
+.about-text h3 {
+  color: #24416b;
+  font-family: "DM Serif Display", serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.about-text p {
+  color: #24416b;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+}
+.about-image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-image img {
+  width: 100%;
+  box-shadow: 21px 19px 0px 4px rgba(204, 140, 24, 0.75);
+  -webkit-box-shadow: 21px 19px 0px 4px rgba(204, 140, 24, 0.75);
+  -moz-box-shadow: 21px 19px 0px 4px rgba(204, 140, 24, 0.75);
+}
+
+// Cuando el viewport es menor a 1200px
+@media screen and (max-width: 1500px) {
+}
+
+// Cuando el viewport es menor a 992px
+@media screen and (max-width: 992px) {
+  .about-container {
+    flex-direction: column;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .about-image {
+    width: 100%;
+  }
+  .about-line {
+    width: 100%;
+  }
+}
+
+// Cuando el viewport es menor a 768px
+@media screen and (max-width: 768px) {
+}

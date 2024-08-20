@@ -1,0 +1,22 @@
+<div class="admin-lugares-container">
+    <h2>Añadir Lugar</h2>
+    <div class="admin-lugares-line"></div>
+    <form [formGroup]="lugarForm" (ngSubmit)="crearLugar()">
+        <div class="form-group">
+            <label for="title">Título</label>
+            <input type="text" id="title" name="title" formControlName="nombre">
+        </div>
+        <div class="form-group">
+            <label for="image">Imagen</label>
+            <input type="text" id="image" name="image" formControlName="imagen">
+        </div>
+        <div class="form-group">
+            <label for="description">Descripción</label>
+            <textarea id="description" name="description" formControlName="descripcion"></textarea>
+        </div>
+        <div class="form-group" id="buttons">
+            <button type="button" class="cancel" [routerLink]="['/admin/lugares']">Volver</button>
+            <button type="submit">Añadir</button>
+        </div>
+    </form>
+</div>

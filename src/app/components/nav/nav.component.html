@@ -1,0 +1,50 @@
+<div class="header-container" id="inicio">
+    <div class="header-top">
+        <div class="header-redes">
+            <ul>
+                <li *ngFor="let red of redes"><a href="{{red.link}}" target="_blank"><i class="{{red.icono}}"></i></a></li>
+            </ul>
+        </div>
+        <div class="header-logo">
+            <h1>Agencia</h1>
+        </div>
+        <div class="header-info">
+            <p><span><i class="fas fa-map-marked"></i></span>2080 1st Ave. Santa Clara, CA 95051</p>
+        </div>
+    </div>
+    <div class="header-nav">
+        <nav>
+            <ul>
+                <li><a (click)="scrollToSection('inicio')">Inicio</a></li>
+                <li><a (click)="scrollToSection('about')">Sobre Nosotros</a></li>
+                <li><a (click)="scrollToSection('testimonios')">Reseñas</a></li>
+                <li><a (click)="scrollToSection('lugares')">Lugares Turisticos</a></li>
+                <li><a (click)="scrollToSection('contact')">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-btn">
+            <span><i class="fas fa-phone-volume"></i></span>
+            <p>+123-456-7890</p>
+        </div>
+    </div>
+    <div class="header-mobile">
+        <div class="header-mobile-top">
+            <div class="header-mobile-logo">
+                <h1>Agencia</h1>
+            </div>
+            <div class="header-mobile-btn">
+                <i class="fas fa-bars" id="OpenMenu" (click)="openNav()"></i>
+                <i class="fas fa-times" id="CloseMenu" (click)="closeNav()"></i>
+            </div>
+        </div>
+        <nav class="" id="myNav">
+            <ul>
+                <li><a (click)="scrollToSection('inicio')">Inicio</a></li>
+                <li><a (click)="scrollToSection('about')">Sobre Nosotros</a></li>
+                <li><a (click)="scrollToSection('testimonios')">Reseñas</a></li>
+                <li><a (click)="scrollToSection('lugares')">Lugares Turisticos</a></li>
+                <li><a (click)="scrollToSection('contact')">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>

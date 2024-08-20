@@ -1,0 +1,23 @@
+<div class="admin-testimonios-container">
+    <div class="admin-testimonios-header">
+        <h2>Testimonios</h2>
+        <a [routerLink]="['/admin/testimonios/add']"><i class="fas fa-plus"></i> Añadir testimonio</a>
+    </div>
+
+    <div class="admin-testimonios-body">
+        <div class="admin-testimonios-item" *ngFor="let testimonio of testimonios">
+            <div class="admin-testimonios-img">
+                <img src="{{ testimonio.imagen }}" alt="{{ testimonio.nombre }}">
+            </div>
+            <div class="admin-testimonios-text">
+                <h3>{{ testimonio.nombre }}</h3>
+                <p>{{ testimonio.descripcion }}</p>
+            </div>
+            <div class="admin-testimonios-buttons">
+                <a [routerLink]="['/admin/testimonios/edit', testimonio._id]"><i class="fas fa-pencil-alt"></i></a>
+                <a (click)="deletetestimonio(testimonio._id)"><i class="fas fa-trash-alt"></i></a>
+                <!-- <button><i class="fas fa-eye"></i></button> -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+<section id="body">
+    <header id="header">
+        <div class="icon__menu">
+            <i class="fas fa-bars" id="btn_open"></i>
+        </div>
+    </header>
+
+    <div class="menu__side" id="menu_side">
+
+        <div class="name__page">
+            <i class="fab fa-youtube"></i>
+            <h4>Admin Panel</h4>
+        </div>
+
+        <div class="options__menu">
+
+
+            <a [routerLink]="['/admin/empresa']" class="selected hero_selected" (click)="cambiarSelected($event)">
+                <div class="option">
+                    <i class="fas fa-building" title="Empresa"></i>
+                    <h4>Empresa</h4>
+                </div>
+            </a>
+
+            <a [routerLink]="['/admin/redes']" class="redes_selected" (click)="cambiarSelected($event)">
+                <div class="option">
+                    <i class="fas fa-share-alt" title="Redes"></i>
+                    <h4>Redes</h4>
+                </div>
+            </a>
+
+            <a [routerLink]="['/admin/hero']" class="hero_selected" (click)="cambiarSelected($event)">
+                <div class="option">
+                    <i class="fas fa-images" title="Hero"></i>
+                    <h4>Hero</h4>
+                </div>
+            </a>
+
+            <a [routerLink]="['/admin/about']" class="about_selected" (click)="cambiarSelected($event)">
+                <div class="option">
+                    <i class="fas fa-info-circle" title="Sobre Nosotros"></i>
+                    <h4>Sobre Nosotros</h4>
+                </div>
+            </a>
+
+            <a [routerLink]="['/admin/lugares']" class="lugares_selected" (click)="cambiarSelected($event)">
+                <div class="option">
+                    <i class="fas fa-globe" title="Lugares Turisticos"></i>
+                    <h4>Lugares Turisticos</h4>
+                </div>
+            </a>
+
+            <a [routerLink]="['/admin/testimonios']" class="testimonios_selected" (click)="cambiarSelected($event)">
+                <div class="option">
+                    <i class="fas fa-quote-left" title="Testimonios"></i>
+                    <h4>Testimonios</h4>
+                </div>
+            </a>
+
+            <a (click)="logout()">
+                <div class="option" style="color: #DC3545;">
+                    <i class="fas fa-sign-out-alt" title="Cerrar Sesion"></i>
+                    <h4>Logout</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <main id="main_content">
+        <router-outlet></router-outlet>
+    </main>
+
+</section>

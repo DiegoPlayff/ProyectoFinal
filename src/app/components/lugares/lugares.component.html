@@ -1,0 +1,15 @@
+<section class="lugares" id="lugares">
+    <h2>Lugares Turisticos</h2>
+    <div class="lugares-line"></div>
+    <span>¿Donde Visitar?</span>
+    <div class="lugares-container">
+        <div class="lugares-card" *ngFor="let lugar of lugares">
+            <img src="{{lugar.imagen}}" alt="card">
+            <div class="lugares-card-text">
+                <h3>{{lugar.nombre}}</h3>
+                <p>{{lugar.descripcion}}</p>
+            </div>
+        </div>
+
+    </div>
+</section>

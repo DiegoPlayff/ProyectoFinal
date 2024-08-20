@@ -1,0 +1,23 @@
+<!-- titulo, imagenn, descripcion -->
+
+<div class="admin-about-container">
+    <h2>Editar Acerca de</h2>
+    <div class="admin-about-line"></div>
+    <form [formGroup]="editForm" (ngSubmit)="editAbout()">
+        <div class="form-group">
+            <label for="titulo">Título</label>
+            <input type="text" id="titulo" name="titulo" formControlName="titulo">
+        </div>
+        <div class="form-group">
+            <label for="imagen">imagenn</label>
+            <input type="text" id="imagen" name="imagen" formControlName="imagen">
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion" formControlName="descripcion"></textarea>
+        </div>
+        <div class="form-group" id="buttons">
+            <button type="submit">Editar</button>
+        </div>
+    </form>
+</div>

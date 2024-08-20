@@ -1,0 +1,23 @@
+<div class="admin-lugares-container">
+    <div class="admin-lugares-header">
+        <h2>Lugares Turisticos</h2>
+        <a [routerLink]="['/admin/lugares/add']"><i class="fas fa-plus"></i> Añadir Lugar</a>
+    </div>
+
+    <div class="admin-lugares-body">
+        <div class="admin-lugares-item" *ngFor="let lugar of lugares">
+            <div class="admin-lugares-img">
+                <img src="{{ lugar.imagen }}" alt="{{ lugar.nombre }}">
+            </div>
+            <div class="admin-lugares-text">
+                <h3>{{ lugar.nombre }}</h3>
+                <p>{{ lugar.descripcion }}</p>
+            </div>
+            <div class="admin-lugares-buttons">
+                <a [routerLink]="['/admin/lugares/edit', lugar._id]"><i class="fas fa-pencil-alt"></i></a>
+                <a (click)="deleteLugar(lugar._id)"><i class="fas fa-trash-alt"></i></a>
+                <!-- <button><i class="fas fa-eye"></i></button> -->
+            </div>
+        </div>
+    </div>
+</div>
